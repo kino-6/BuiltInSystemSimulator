@@ -1,0 +1,14 @@
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\Simulator.exe.config
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\Simulator.exe
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\Simulator.pdb
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\MetroFramework.Design.dll
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\MetroFramework.dll
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\MetroFramework.Fonts.dll
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.MainUI.resources
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.Properties.Resources.resources
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.csproj.GenerateResource.cache
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.csproj.CoreCompileInputs.cache
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.csproj.CopyComplete
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.exe
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.pdb
+C:\LocalWork\Prj\VCSim\Simulator\Simulator\obj\Debug\Simulator.csprojAssemblyReference.cache

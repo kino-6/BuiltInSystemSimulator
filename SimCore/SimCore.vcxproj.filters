@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="util">
+      <UniqueIdentifier>{f1617eed-53b9-45e3-9956-399268b87ca2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interface">
+      <UniqueIdentifier>{254ec174-ae9e-47a3-880c-880ec4515ef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="target_source">
+      <UniqueIdentifier>{85c3902d-bf8b-4ef1-845f-1f881bef5e32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bcea94be-f74d-4810-b5be-1447268e0443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model">
+      <UniqueIdentifier>{a28a4ae3-52ba-4e9d-8bb8-d62139ca1583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\Ecu">
+      <UniqueIdentifier>{2981ec6c-25f0-48d5-b8a3-686952d14bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\Task">
+      <UniqueIdentifier>{a5b807a0-69b7-405b-ad69-1fcfdfea7930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\Timer">
+      <UniqueIdentifier>{2597b21e-553f-474f-a18f-c84b657bd80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\Chip">
+      <UniqueIdentifier>{e60228fe-563e-4099-a4b1-1bed811aac86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="model\Power">
+      <UniqueIdentifier>{9c9427e3-6418-44ef-a20a-bd0f70a95a59}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="interface\interface_for_ui.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Logger.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="model\BaseModel.h">
+      <Filter>model</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Ecu\Ecu.h">
+      <Filter>model\Ecu</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Timer\Timer.h">
+      <Filter>model\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Task\Task.h">
+      <Filter>model\Task</Filter>
+    </ClInclude>
+    <ClInclude Include="src\all.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="target_source\sc_control.h">
+      <Filter>target_source</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\interface_for_target_source.h">
+      <Filter>interface</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Power\Power.h">
+      <Filter>model\Power</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Chip\Chip.h">
+      <Filter>model\Chip</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Chip\Chip_access.h">
+      <Filter>model\Chip</Filter>
+    </ClInclude>
+    <ClInclude Include="model\Chip\Chip_reg.h">
+      <Filter>model\Chip</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="util\Logger.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="model\BaseModel.cpp">
+      <Filter>model</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Ecu\Ecu.cpp">
+      <Filter>model\Ecu</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Timer\Timer.cpp">
+      <Filter>model\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Task\Task.cpp">
+      <Filter>model\Task</Filter>
+    </ClCompile>
+    <ClCompile Include="target_source\sc_control.c">
+      <Filter>target_source</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Power\Power.cpp">
+      <Filter>model\Power</Filter>
+    </ClCompile>
+    <ClCompile Include="model\Chip\Chip.cpp">
+      <Filter>model\Chip</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
