@@ -9,5 +9,6 @@
  1. model.task.register_task(C/C++ Function);
  2. UI -> sim_main() -> model.task.main()
 
-Image is 2.
+# Image
+
 ![OverView](Images/SimulatorOverView_v100.png)
