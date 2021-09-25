@@ -21,15 +21,18 @@ void Timer::reset(SimTimerIdx idx) {
 }
 
 
-void Timer::set(SimTimerIdx idx, uint64_t val) {
+void Timer::set(SimTimerIdx idx, uint_fast64_t val) {
 	Timers.at((std::size_t)idx) = val;
 }
 
 
-void Timer::set_ticks(uint64_t val) {
+void Timer::set_ticks(uint_fast64_t val) {
 	ticks = val;
 }
 
+uint_fast64_t Timer::get_ticks(SimTimerIdx idx) {
+	return Timers.at((std::size_t)idx);
+}
 
 void Timer::tick(void) {
 	for (auto it = std::begin(Timers); it != std::end(Timers); ++it) {
@@ -38,12 +41,12 @@ void Timer::tick(void) {
 }
 
 
-void Timer::tick(SimTimerIdx idx, uint64_t val) {
+void Timer::tick(SimTimerIdx idx, uint_fast64_t val) {
 	Timers.at((std::size_t)idx) = val;
 }
 
 
-bool Timer::is_time_out(SimTimerIdx idx, uint64_t val) {
+bool Timer::is_time_out(SimTimerIdx idx, uint_fast64_t val) {
 	if (Timers.at((std::size_t)idx) > val) {
 		return true;
 	}

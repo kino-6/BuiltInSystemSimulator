@@ -9,6 +9,7 @@ Task::Task() {
 	this->task.resize((std::size_t)TASK_TYPE::TASK_NUM);
 	this->thread = nullptr;
 	thread_state = ThereadFlag::ThreadIdle;
+	this->one_time_flag = ONE_TIME_CALL_YET;
 }
 
 Task::~Task() {
@@ -21,7 +22,7 @@ Task::~Task() {
 	this->thread = nullptr;
 }
 
-void Task::add_task(TASK_TYPE type, std::function<void()> task) {
+void Task::register_task(TASK_TYPE type, std::function<void()> task) {
 	this->task[(uint_fast32_t)type].push_back(task);
 }
 
@@ -39,6 +40,11 @@ void Task::call_task(Timer* timer, SimTimerIdx idx, TASK_TYPE task_type, uint_fa
 void Task::Main(void){}
 
 void Task::Main(Timer* timer) {
+	if (this->one_time_flag == ONE_TIME_CALL_YET) {
+		call_task(timer, SimTimerIdx::SimTimerOneTime, TASK_TYPE::TASK_ONE_TIME, 1);
+		this->one_time_flag = ONE_TIME_CALL_FINISHED;
+	}
+
 	call_task(timer, SimTimerIdx::SimTimer100us,	TASK_TYPE::TASK_100US,	100);
 	call_task(timer, SimTimerIdx::SimTimer1ms,		TASK_TYPE::TASK_1MS,	1000);
 	call_task(timer, SimTimerIdx::SimTimer4ms,		TASK_TYPE::TASK_4MS,	4000);

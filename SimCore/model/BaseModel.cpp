@@ -1,6 +1,9 @@
 #include "BaseModel.h"
 
-BaseModel::BaseModel(){}
+BaseModel::BaseModel(){
+	this->idx = 0;
+}
+
 BaseModel::~BaseModel(){}
 void BaseModel::Main(void) {}
 void BaseModel::Reset(void) {}

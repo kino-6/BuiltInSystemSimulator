@@ -36,7 +36,7 @@ namespace Simulator
             this.Log = new MetroFramework.Controls.MetroTextBox();
             this.RunSimulationButton = new MetroFramework.Controls.MetroButton();
             this.ConfigStateLabel = new MetroFramework.Controls.MetroLabel();
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.ClearLog = new MetroFramework.Controls.MetroButton();
             this.OpenScenarioFile = new System.Windows.Forms.OpenFileDialog();
             this.OpenConfigFile = new System.Windows.Forms.OpenFileDialog();
             this.bw_main = new System.ComponentModel.BackgroundWorker();
@@ -224,18 +224,19 @@ namespace Simulator
             this.ConfigStateLabel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.ConfigStateLabel.WrapToLine = true;
             // 
-            // metroButton1
+            // ClearLog
             // 
-            this.metroButton1.DisplayFocus = true;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(762, 243);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(145, 36);
-            this.metroButton1.TabIndex = 7;
-            this.metroButton1.Text = "Save Logs";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.metroButton1.UseSelectable = true;
+            this.ClearLog.DisplayFocus = true;
+            this.ClearLog.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.ClearLog.Highlight = true;
+            this.ClearLog.Location = new System.Drawing.Point(762, 243);
+            this.ClearLog.Name = "ClearLog";
+            this.ClearLog.Size = new System.Drawing.Size(145, 36);
+            this.ClearLog.TabIndex = 7;
+            this.ClearLog.Text = "Clear Logs";
+            this.ClearLog.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.ClearLog.UseSelectable = true;
+            this.ClearLog.Click += new System.EventHandler(this.ClearLog_Click);
             // 
             // OpenScenarioFile
             // 
@@ -266,7 +267,7 @@ namespace Simulator
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(933, 562);
             this.Controls.Add(this.ConfigStateLabel);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.ClearLog);
             this.Controls.Add(this.RunSimulationButton);
             this.Controls.Add(this.ScenarioProgress);
             this.Controls.Add(this.metroTile1);
@@ -294,7 +295,7 @@ namespace Simulator
         private MetroFramework.Controls.MetroTextBox Log;
         private MetroFramework.Controls.MetroButton RunSimulationButton;
         private MetroFramework.Controls.MetroLabel ConfigStateLabel;
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton ClearLog;
         private System.Windows.Forms.OpenFileDialog OpenScenarioFile;
         private System.Windows.Forms.OpenFileDialog OpenConfigFile;
         private System.ComponentModel.BackgroundWorker bw_main;

@@ -72,6 +72,9 @@
     <ClInclude Include="model\Chip\Chip_reg.h">
       <Filter>model\Chip</Filter>
     </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="util\Logger.cpp">

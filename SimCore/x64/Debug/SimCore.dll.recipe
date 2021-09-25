@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\LocalWork\Prj\VCSim\Simulator\Simulator\bin\Debug\SimCore.dll</FullPath>
+      <FullPath>C:\LocalWork\Prj\VCSim\BuiltInSystemSimulator\Simulator\bin\Debug\SimCore.dll</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

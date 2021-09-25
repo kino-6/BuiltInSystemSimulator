@@ -6,7 +6,7 @@
  
 # What's this ?
  This is built-in system simulator for C/C++ S/W.
- 1. model.task.add_task(C/C++ Function);
+ 1. model.task.register_task(C/C++ Function);
  2. UI -> sim_main() -> model.task.main()
 
 Image is 2.

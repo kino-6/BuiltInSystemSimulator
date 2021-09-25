@@ -7,6 +7,7 @@ enum class TASK_TYPE : std::uint_fast32_t {
 	TASK_4MS,
 	TASK_20MS,
 	TASK_CALLBACK,
+	TASK_ONE_TIME,
 	TASK_NUM
 };
 
@@ -17,11 +18,12 @@ enum class CPU_TYPE : std::uint_fast32_t {
 };
 
 enum class SimTimerIdx : std::uint_fast32_t{
-	SimTimerMain,
+	SimTimerAllTime,
 	SimTimer100us,
 	SimTimer1ms,
 	SimTimer4ms,
 	SimTimer20ms,
+	SimTimerOneTime,
 	SimTimerNum
 };
 

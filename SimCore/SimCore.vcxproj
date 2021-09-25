@@ -161,6 +161,7 @@
     <ClInclude Include="model\Task\Task.h" />
     <ClInclude Include="model\Timer\Timer.h" />
     <ClInclude Include="src\all.h" />
+    <ClInclude Include="src\main.h" />
     <ClInclude Include="target_source\sc_control.h" />
     <ClInclude Include="util\Logger.h" />
   </ItemGroup>

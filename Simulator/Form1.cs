@@ -119,12 +119,12 @@ namespace Simulator
         private void BwSimMain(object sender, DoWorkEventArgs e)
         {
             sim_main();
-            e.Result = "Simulation Completed!";
+            //e.Result = "Simulation Completed!";
         }
 
         private void BwSimMainCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            AddLog(e.Result.ToString(), Color.Black);
+            //AddLog(e.Result.ToString(), Color.Black);
             RunSimulationButton.Enabled = true;
 
             // cancel logger thread
@@ -198,6 +198,11 @@ namespace Simulator
             {
                 AddLog("Target dll is working on 64bit! ", Color.Black);
             }
+        }
+
+        private void ClearLog_Click(object sender, EventArgs e)
+        {
+            Log.Clear();
         }
     }
 }
